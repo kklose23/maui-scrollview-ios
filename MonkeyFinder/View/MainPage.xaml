@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="MonkeyFinder.View.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:MonkeyFinder.Model"
+             xmlns:viewmodel="clr-namespace:MonkeyFinder.ViewModel"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             Title="Monkeys"
+             x:Name="this">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style TargetType="Label">
+        <Setter Property="FontSize"
+                Value="200" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <ScrollView BindingContext="{x:Reference this}">
+    <VerticalStackLayout>
+
+      <Button Clicked="Button_Clicked"
+              Text="Hide" />
+
+      <Label Text="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+      <Label Text="Test"
+             IsVisible="{Binding Show}" />
+
+    </VerticalStackLayout>
+  </ScrollView>
+
+</ContentPage>
